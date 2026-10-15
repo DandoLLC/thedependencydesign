@@ -7,7 +7,11 @@
     <meta name="description" content="Companion site for The Dependency Design: How to Reclaim Connection in the Age of Synthetic Intimacy. Book + 90-Day Guided Workbook. A DANDO LLC Publication by Daniel D. Calloway III.">
     <meta property="og:title" content="The Dependency Design">
     <meta property="og:description" content="How to Reclaim Connection in the Age of Synthetic Intimacy — Book + 90-Day Guided Workbook. A DANDO LLC Publication">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://dandollc.github.io/thedependencydesign/">
+    <meta property="og:image" content="https://dandollc.github.io/thedependencydesign/dando-logo.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://dandollc.github.io/thedependencydesign/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@200;300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -740,6 +744,12 @@
         /* Kit form overrides */
         .formkit-alert-success { background: transparent !important; border: 1px solid var(--gold-dim) !important; color: var(--cream) !important; }
         .formkit-powered-by-convertkit-container { display: none !important; }
+        /* Shared cross-site links (2026-10 preview) */
+        .eco-links { font-size: 0.78rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.6rem; margin-top: 1rem; }
+        .eco-links a { text-decoration: none; }
+        .eco-links a[aria-current] { text-decoration: underline; text-underline-offset: 3px; }
+        a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+        
         @media (max-width: 480px) { .newsletter-form { flex-direction: column; } }
 
         footer {
@@ -801,7 +811,7 @@
     <nav>
         <div class="nav-inner">
             <img src="dando-logo.png" alt="DANDO LLC" class="nav-logo">
-            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Menu">&#9776;</button>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Menu" aria-expanded="false">&#9776;</button>
             <ul class="nav-links">
                 <li><a href="#thesis">Thesis</a></li>
                 <li class="nav-dropdown">
@@ -1193,7 +1203,7 @@
                     <span>Relationships &middot; Technology &middot; Bonding</span>
                 </div>
                 <div class="dando-pub">
-                    <h4 style="font-size: 0.95rem;"><a href="https://dandollc.github.io/thedependencydesign" target="_blank" rel="noopener noreferrer" style="color: var(--cream); text-decoration: none; border-bottom: 1px solid var(--border-gold); transition: color 0.3s ease;">The Dependency Design &mdash; Guided Workbook</a></h4>
+                    <h4 style="font-size: 0.95rem;"><a href="https://callosway.gumroad.com/l/ldypra" target="_blank" rel="noopener noreferrer" style="color: var(--cream); text-decoration: none; border-bottom: 1px solid var(--border-gold); transition: color 0.3s ease;">The Dependency Design &mdash; Guided Workbook</a></h4>
                     <span>90-Day Practice &middot; Five Loops &middot; Daily Pages</span>
                 </div>
                 <div class="dando-pub">
@@ -1217,13 +1227,14 @@
                     <span>Cognitive Sovereignty &middot; AI Governance</span>
                 </div>
                 <div class="dando-pub">
-                    <h4><a href="https://papers.ssrn.com/abstract=6158707" target="_blank" rel="noopener noreferrer" style="color: var(--cream); text-decoration: none; border-bottom: 1px solid var(--border-gold); transition: color 0.3s ease;">The Hegemonic Function of Law in American Slavery</a></h4>
-                    <span>Legal Theory &middot; Power &middot; Resistance</span>
+                    <h4>The Hegemonic Function of Law in American Slavery</h4>
+                    <span>Legal Theory &middot; Power &middot; Resistance &middot; CALI Excellence Award</span>
                 </div>
             </div>
             <div class="dando-links">
                 <a href="https://dandollc.github.io" target="_blank" rel="noopener noreferrer">dandollc.github.io</a>
-                <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7108073" target="_blank" rel="noopener noreferrer">SSRN Publications</a>
+                <a href="https://dandollc.github.io/dando/" target="_blank" rel="noopener noreferrer">DANDO Advisory</a>
+                <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7682344" target="_blank" rel="noopener noreferrer">SSRN Publications</a>
             </div>
             <p class="dando-author-note"><strong>Daniel D. Calloway III</strong> &mdash; Regulatory and compliance attorney, legal AI subject matter expert, member of the Narragansett Indian Tribe.</p>
         </div>
@@ -1241,6 +1252,12 @@
     <footer>
         <p class="footer-closing">Lineage in service. Ideas made manifest.</p>
         <p>&copy; 2025&ndash;2026 DANDO LLC &middot; All rights reserved &middot; <a href="legal.html">Legal</a> &middot; <a href="https://dandollc.github.io" rel="noopener noreferrer">dandollc.github.io</a></p>
+        <div class="eco-links" role="navigation" aria-label="Related sites">
+    <a href="https://dandollc.github.io/">Daniel D. Calloway III</a>
+    <a href="https://dandollc.github.io/dando/">DANDO Advisory</a>
+    <a href="https://dandollc.github.io/callosway/">Callo&rsquo;s Way</a>
+    <a href="https://dandollc.github.io/thedependencydesign/" aria-current="page">The Dependency Design</a>
+  </div>
     </footer>
 
     <script>
@@ -1321,5 +1338,60 @@
             nav.style.padding = window.scrollY > 50 ? '0.7rem 2rem' : '1rem 2rem';
         });
     </script>
+<script>
+/* Keyboard and screen-reader support for existing click controls (2026-10 preview).
+   The original onclick handlers still do the work; this only adds roles, focus and state. */
+(function () {
+  function pressable(el) {
+    el.setAttribute('tabindex', '0');
+    el.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+    });
+  }
+  function watch(host, fn) {
+    fn();
+    new MutationObserver(fn).observe(host, { attributes: true, attributeFilter: ['class'] });
+  }
+  // Accordions
+  document.querySelectorAll('.practice-header, .discussion-header').forEach(function (h) {
+    h.setAttribute('role', 'button'); pressable(h);
+    var host = h.parentElement;
+    watch(host, function () { h.setAttribute('aria-expanded', host.classList.contains('open')); });
+  });
+  document.querySelectorAll('.discussion-item').forEach(function (item) {
+    var h = item.querySelector('h3');
+    if (!h) return;
+    h.setAttribute('role', 'button'); pressable(h);
+    watch(item, function () { h.setAttribute('aria-expanded', item.classList.contains('open')); });
+  });
+  // Single-choice questions
+  function radios(groupSel, optSel, selectedClass, labelFn) {
+    document.querySelectorAll(groupSel).forEach(function (g) {
+      g.setAttribute('role', 'radiogroup');
+      var label = labelFn(g);
+      if (label) g.setAttribute('aria-label', label);
+      g.querySelectorAll(optSel).forEach(function (o) {
+        o.setAttribute('role', 'radio'); pressable(o);
+        watch(o, function () { o.setAttribute('aria-checked', o.classList.contains(selectedClass)); });
+      });
+    });
+  }
+  radios('.sq-options', '.sq-option', 'selected', function (g) {
+    var q = g.closest('.signal-question'); var t = q && q.querySelector('.sq-text, p, h4');
+    return t ? t.textContent.trim() : '';
+  });
+  radios('.profile-scale', 'label', 'selected', function (g) {
+    var q = g.closest('.profile-question'); var t = q && q.querySelector('.q-loop');
+    return t ? t.textContent.trim() + ' (0 never, 4 nearly always)' : '';
+  });
+  // Menu button state
+  var mt = document.querySelector('.mobile-toggle'), nl = document.querySelector('.nav-links');
+  if (mt && nl) {
+    nl.id = nl.id || 'navLinks';
+    mt.setAttribute('aria-controls', nl.id);
+    watch(nl, function () { mt.setAttribute('aria-expanded', nl.classList.contains('active')); });
+  }
+})();
+</script>
 </body>
 </html>
