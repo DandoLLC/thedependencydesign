@@ -515,6 +515,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 }
 .dd-footer li a .sub { font-family: var(--f-body); font-size: 0.8125rem; font-weight: 300; color: var(--dim); margin-top: 0.15rem; }
 .dd-footer li a:hover { color: var(--gold-light); }
+sup.tm { font-size: 0.5em; font-style: normal; font-weight: 400; letter-spacing: 0; vertical-align: super; line-height: 0; margin-left: 0.06em; }
+.dd-footer-tm { margin-top: 0.25rem; font-size: 0.72rem; line-height: 1.55; color: var(--silver); opacity: 0.85; }
 .dd-footer-bottom {
   margin-top: 2.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle);
   display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.6rem;
@@ -589,7 +591,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
       <div class="hero-main">
         <div class="hero-window">
           <p class="hero-imprint">A DANDO LLC Publication</p>
-          <h1 id="book-title"><span>The Dependency</span> <span class="h1-second">Design</span></h1>
+          <h1 id="book-title"><span>The Dependency</span> <span class="h1-second">Design<sup class="tm">&trade;</sup></span></h1>
         </div>
         <p class="hero-subtitle">How to Reclaim Connection in the Age of Synthetic Intimacy</p>
         <p class="hero-author">by <strong>Daniel D. Calloway III</strong></p>
@@ -953,7 +955,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
             <span class="pub-meta">Companion workbook</span>
           </li>
           <li class="dando-pub">
-            <h4><a href="https://dandollc.github.io/callosway" target="_blank" rel="noopener noreferrer">Callo's Way: The Art of Conscious Empowerment</a></h4>
+            <h4><a href="https://dandollc.github.io/callosway" target="_blank" rel="noopener noreferrer">Callo's Way<sup class="tm">&trade;</sup>: The Art of Conscious Empowerment</a></h4>
             <span class="pub-topics">Identity &middot; Agency &middot; Coherence</span>
             <span class="pub-meta">Book I of III</span>
           </li>
@@ -1033,6 +1035,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
       <span aria-hidden="true">&middot;</span>
       <a href="legal.html">Legal</a>
     </div>
+    <p class="dd-footer-tm">The Dependency Design, Callo&rsquo;s Way and the D mark are trademarks of DANDO, LLC.</p>
   </div>
 </footer>
 
